@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.35/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+    <div class="bg-bl"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                CarPool
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./signup.html">Rides</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section" id="indpage">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 col-md-12 col-sm-12  order-2 order-lg-1 cardaniL">
+                    <h1 class="hero-title">Share the ride. Share the <p>saving</p></h1>
+                    <p class="lead hero-subtitle">
+                        Most affordable Uber ride. You save on Uber Pool because we match you with other riders heading in a similar direction
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a class="btn btn-lg btn-success" href="#search">Request car pool</a>
+                        <a href="./signup.html" class="btn btn-outline-primary btn-lg">Sign In</a>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2 cardaniR">
+                    <div class="text-center text-lg-end">
+                        <img src="./imgs/Carpool-cuate.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="search" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xl-6">
+                    <div class="search-box glass-card cardaniL mx-auto" id="searchimg">
+                        <h3 class="mb-4 text-center" style="color: black; font-weight: 500;">Go Anywhere with uber</h3>
+                        <form action="Get">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">From</label>
+                                    <input type="text" class="form-control form-control-modern" placeholder="Departure city">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">To</label>
+                                    <input type="text" class="form-control form-control-modern" placeholder="Destination city">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control form-control-modern" id="dateC">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Passengers</label>
+                                    <select class="form-control form-control-modern">
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <a  href="./signup.html" class="btn btn-outline-warning fw-bold btn-transparent w-100 btn-lg">
+                                        See Prices
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-none d-sm-block cardaniR">
+                    <div class="text-center glass-card p-4">
+                        <img src="./imgs/Carpool-amico.png"  class="img-fluid" alt="carpool">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="row text-center mb-5 cardaniU">
+                <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+                    <h2 class="display-6 fw-bold mb-4">Why choose car pool?</h2>
+                    <p class="lead">save environment</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-md-6 cardaniL">
+                    <div class="feature-card glass-card h-100">
+                        <div class="feature-icon"><i class="fa-solid fa-shield-halved fa-lg" style="color:var(--accent)"></i></div>    
+                        <h3 class="feature-title">Secure and safe</h3>
+                        <p class="feature-description">verification</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-md-6 cardaniU">
+                    <div class="feature-card glass-card h-100">
+                        <div class="feature-icon"><i class="fa-solid fa-wallet fa-lg" style="color:var(--accent)"></i></div>
+                        <h3 class="feature-title">Cost Effective</h3>
+                        <p class="feature-description">Save money</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-md-6 cardaniR">
+                    <div class="feature-card glass-card h-100">
+                        <div class="feature-icon"><i class="fa-solid fa-leaf fa-lg" style="color:var(--accent)"></i></div>
+                        <h3 class="feature-title">eco-friendly</h3>
+                        <p class="feature-description">Reduce carbon</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-md-6 cardaniL">
+                    <div class="feature-card glass-card h-100">
+                        <div class="feature-icon"><i class="fa-solid fa-calendar-check fa-lg" style="color:var(--accent)"></i></div>
+                        <h3 class="feature-title">Easy booking</h3>
+                        <p class="feature-description">Intuitive interface</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-md-6 cardaniU">
+                    <div class="feature-card glass-card h-100">
+                        <div class="feature-icon"><i class="fa-solid fa-users fa-lg" style="color:var(--accent)"></i></div>
+                        <h3 class="feature-title">Social Connect</h3>
+                        <p class="feature-description">Meet like</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-md-6 cardaniR">
+                    <div class="feature-card glass-card h-100">
+                        <div class="feature-icon"><i class="fa-solid fa-headset fa-lg" style="color:var(--accent)"></i></div> 
+                        <h3 class="feature-title">24/7 support</h3>
+                        <p class="feature-description">Intuitive interface</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5 cardaniU">
+                <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+                    <h2 class="display-4 fw-bold mb-4">Suggestions</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-md-6 cardaniL">
+                    <div class="card p-3 h-100">
+                        <img src="./imgs/Order ride-cuate.png" alt="Ride" class="img-fluid mb-3">
+                        <h5>Ride</h5>
+                        <p class="text-muted small">Request a quick ride across town.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-md-6 cardaniU">
+                    <div class="card p-3 h-100">
+                        <img src="./imgs/Hotel Booking-cuate.png" alt="Reserve" class="img-fluid mb-3">
+                        <h5>Reserve</h5>
+                        <p class="text-muted small">Book in advance and relax on the day.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-md-6 cardaniU">
+                    <div class="card p-3 h-100">
+                        <img src="./imgs/Front car-cuate.png" alt="Intercity" class="img-fluid mb-3">
+                        <h5>Intercity</h5>
+                        <p class="text-muted small">Affordable outstation travel.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-md-6 cardaniR">
+                    <div class="card p-3 h-100">
+                        <img src="./imgs/Delivery-cuate.png" alt="Moto" class="img-fluid mb-3">
+                        <h5>Moto</h5>
+                        <p class="text-muted small">Quick motorbike rides.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-md-6">
+                    <div class="glass-card cardaniL p-4 h-100">
+                        <span class="stat-number">50K+</span>
+                        <div class="stat-label">Happy Users</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-md-6">
+                    <div class="glass-card p-4 cardaniU h-100">
+                        <span class="stat-number">1M+</span>
+                        <div class="stat-label">Rides Completed</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-md-6">
+                    <div class="glass-card cardaniU p-4 h-100">
+                        <span class="stat-number">250+</span>
+                        <div class="stat-label">Cities Covered</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-md-6">
+                    <div class="glass-card p-4 cardaniR h-100">
+                        <span class="stat-number">95%</span>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+                    <div class="footer-brand">car pool</div>
+                    <div>
+                        <a class="footer-description text-decoration-none" href="./Profile.html">Visit Help center</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-md-6 mb-4">
+                    <h5 class="mb-3">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#careers">Our offerings</a></li>
+                        <li><a href="#press">Uber Blog</a></li>
+                        <li><a href="#blog">Investors</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#blog">Careers</a></li>
+                        <li><a href="#blog">Uber AI</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-md-6 mb-4">
+                    <h5 class="mb-3">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="#help">Ride</a></li>
+                        <li><a href="#safety">Drive</a></li>
+                        <li><a href="#contact">Deliver</a></li>
+                        <li><a href="#faq">Eat</a></li>
+                        <li><a href="#faq">Uber for business</a></li>
+                        <li><a href="#faq">Uber freight</a></li>
+                        <li><a href="#faq">Uber health</a></li>
+                        <li><a href="#faq">Gift cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-md-6 mb-4">
+                    <h5 class="mb-3">Global citizenship</h5>
+                    <ul class="footer-links">
+                        <li><a href="#terms">Safety</a></li>
+                        <li><a href="#privacy">sustanibility</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#disclaimer">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-md-6 mb-4">
+                    <h5 class="mb-3">Travel</h5>
+                    <ul class="footer-links">
+                        <li><a href="#api">Reserve</a></li>
+                        <li><a href="#partners">Airports</a></li>
+                        <li><a href="#affiliates">Cities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2); margin: 2rem 0;">
+            <div class="text-center">
+                <p style="opacity: 0.7;">&copy; 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var faders = document.querySelectorAll('.cardaniL');
+        flatpickr("#dateC", {
+            altInput: true,
+            altFormat: "F j, Y",
+            dateFormat: "Y-m-d",
+            minDate: "today"
+        });
+        
+        var appearOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+        });
+
+        faders.forEach(card => {
+            appearOnScroll.observe(card);
+        });
+
+        var fadersR = document.querySelectorAll('.cardaniR');
+        var appearOnScrollR = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+        });
+
+        fadersR.forEach(card => {
+            appearOnScrollR.observe(card);
+        });
+        
+        var fadersU = document.querySelectorAll('.cardaniU');
+        var appearOnScrollU = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+        });
+
+        fadersU.forEach(card => {
+            appearOnScrollU.observe(card);
+        });
+
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smooth: true
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+
+</body>
+</html>
