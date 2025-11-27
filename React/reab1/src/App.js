@@ -29,14 +29,18 @@
 // LAB 2
 
 import Faculty from "./pages/Lab2/Faculty.js";
-import A from "./pages/Component/A.js";
+// import A from "./pages/Component/A.js";
+import A from "./pages/Component2/A.js";
 import Student from "./pages/Lab2/Student.js";
+import { useState } from "react";
 function App(){
+    const[name,setName]=useState("padia");
     return(
         <>
             <Faculty/>
             <Student/>
-            <A name="Kartik"/>
+            {/* <A name={name} setName={setName}/> */}
+            <A name={name} setName={setName}/>
         </>
     );
 }

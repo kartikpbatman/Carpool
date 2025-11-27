@@ -3,6 +3,6 @@ import E from "./E.js";
  
 function D(props){
      
-    <E name={props.name}/>
+    return <E name={props.name} setName={props.setName}/>
 }
 export default D;

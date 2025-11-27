@@ -3,6 +3,6 @@ import React from "react";
 import D from "./D.js";
 function C(props){;
     
-    <D name={props.name}/>
+    return <D name={props.name} setName={props.setName}/>
 }
 export default C;
